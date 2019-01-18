@@ -1,0 +1,253 @@
+@font-face {
+	font-family: ProximaNova;
+	src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+	src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: ProximaNova;
+	src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+	src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "slick.scss";
+
+html {
+	scroll-behavior: smooth;
+	}
+
+body{
+	background-color:  #ebebeb;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 1170px;
+}
+
+.ba-header{
+	background: url(../img/Rectangle1.jpeg);
+	background-size: cover;
+	text-align: center;
+	.ba-nav{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 240px;
+		ul{
+			text-transform: uppercase;
+			display: inline-flex;
+			li{
+				font-family: ProximaNova;
+				list-style: none;
+				font-size: 24px;
+				font-weight: 400;
+				:hover{
+					color: $sub-color;
+				}
+				a{
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+			li + li{
+				margin-left: 25px;
+			}
+		}
+	}
+	h1{
+		font-family: ProximaNova;
+color: $prib-color;
+font-size: 72px;
+font-weight: 700;
+text-transform: uppercase;
+	}
+	p{
+color:  $prid-color;
+font-size: 30px;
+font-style: italic;
+text-align: center;
+padding-bottom: 500px;
+	}
+}
+
+.ba-about-us{
+	padding: 30px 0 110px;
+	img{
+		position: relative;
+		z-index: 9;
+	}
+	img:hover{
+		position: relative;
+		z-index: 1;
+	}
+	.ba-about--hov{	
+		position: relative;
+		z-index: 2;
+		top:30%;
+		left: 0;
+		text-align: center;
+		h4{
+			text-transform: uppercase;
+			font-family: ProximaNova;
+			color: #fefbfc;
+			font-size: 36px;
+			font-weight: 400;
+			margin: 0;
+		}
+	}
+p{
+	color: $sub-color;
+	span{
+		font-weight: 700;
+	}
+}
+}
+
+.ba-about__text{
+	padding-top: 175px;
+	font-size: 20px;
+	line-height: 1.2em;
+	:first-child {
+		margin-bottom: 26px;
+	}
+}
+
+.ba-sv{
+	color: $sub-color;
+	.ba-sv-graphic, .ba-sv-mobile{
+		background: #dbdbdb;
+	}
+	.ba-service{
+		background: url(../img/Rectangle4.jpeg);
+		background-size: cover;
+		color: $prim-color;
+		padding: 80px 10px;
+	}
+	.ba-sv-graphic{
+		padding: 80px 80px 140px;
+	}
+	.ba-sv-web{
+		padding: 80px 80px 140px;
+	}
+	.ba-sv-seo{
+		padding: 80px 80px 140px;
+	}
+	.ba-sv-mobile{
+		padding: 80px 80px 140px;
+	}
+}
+
+.ba-resent{
+	background: url(../img/works-bg.jpeg);
+	background-size: cover;
+	text-align: center;
+	.ba-resent__slick{
+		margin: 0 auto;
+	}
+	h3{
+		font-family: ProximaNova;
+		color: $prim-color;
+		font-size: 36px;
+		font-weight: normal;
+	}
+	button{
+		color: #fff;
+		border-color: #fff;
+		margin-bottom: 50px;
+	}
+	.slick-dots {
+		margin: 10px;
+		padding: 0;
+		list-style: none;	
+		display: flex;
+		align-items: center;
+		justify-content: center; }
+	
+		.slick-dots li {
+		  padding: 0 4px; }
+	
+		.slick-dots button {
+		  font-size: 0;
+		  width: 10px;
+		  height: 10px;
+		  border: 1px solid #fff;
+		  background: none;
+		  border-radius: 50%;
+		  padding: 0;
+		  display: block;
+		  outline: none; }
+	
+		  .slick-dots button:hover, .slick-dots button:focus {
+			background-color: #fff; }
+	
+		.slick-dots .slick-active button {
+		  background-color: #fff; }
+}
+
+.ba-our-team{
+	text-align: center;
+	padding: 50px 0 100px;
+	h4{
+		font-family: ProximaNova;
+	color: $sub-color;
+	font-size: 36px;
+font-weight: normal;
+	}
+}
+
+.ba-team-slider{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	ul{
+		display: inline-flex;
+		background: #9f9acf;
+		padding: 0;
+		li{
+			list-style: none;
+		}
+		li + li{
+			margin-left: 10px;
+		}
+	}
+}
+
+.ba-map{
+	height: 900px;
+}
+
+.ba-footer{
+	background-color:  #9f9acf;
+	display: flex;
+		align-items: center;
+		justify-content: space-between;
+	p, ul{
+		display: inline-flex;
+	}
+			li{
+				list-style: none;
+			}	
+li + li{
+	margin-left: 20px;
+}
+p{
+	color: #fff;
+	span{
+		font-weight: 700;
+	}
+}
+	}
+
+

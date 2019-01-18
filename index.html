@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ex3</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<header class="ba-header">
+		<div class="ba-container">
+
+
+			<div class="ba-nav">
+				<a href="#"><svg width="54px" height="72px">
+						<path fill-rule="evenodd" fill="rgb(246, 246, 246)" d="M29.714,52.981 C29.206,58.539 28.174,63.426 26.295,67.698 C25.672,69.114 24.539,70.465 24.016,72.000 C23.940,72.000 23.864,72.000 23.788,72.000 C23.788,71.622 23.788,71.245 23.788,70.868 C24.216,70.203 24.007,69.293 24.244,68.377 C25.372,64.020 25.457,58.207 23.560,54.566 C20.320,48.345 13.832,50.438 7.379,47.773 C4.851,46.730 2.994,44.583 1.681,42.339 C1.225,41.057 0.769,39.773 0.313,38.490 C-0.403,35.785 0.251,32.291 0.997,30.339 C4.104,22.208 11.869,18.630 21.281,23.094 C21.281,22.868 21.281,22.641 21.281,22.415 C20.474,21.319 20.736,19.682 20.369,18.113 C19.384,13.894 18.625,0.046 23.332,-0.000 C24.609,0.926 27.063,0.885 27.207,2.943 C26.831,3.348 26.809,3.512 26.751,4.302 C26.827,4.302 26.903,4.302 26.979,4.302 C26.979,4.226 26.979,4.151 26.979,4.075 C27.960,3.045 28.229,0.705 29.942,0.453 C31.310,1.673 33.625,1.916 34.044,4.075 C32.902,5.521 31.775,8.049 31.309,9.962 C31.461,9.962 31.613,9.962 31.765,9.962 C33.193,8.085 39.077,2.711 41.793,3.169 C42.597,4.461 43.427,5.738 43.844,7.472 C42.409,7.981 41.749,9.367 40.653,10.189 C36.654,13.188 33.422,17.563 30.853,21.962 C31.081,21.962 31.309,21.962 31.537,21.962 C33.106,20.742 39.510,20.151 42.249,20.830 C49.471,22.622 51.501,25.101 53.188,32.377 C53.423,33.388 53.732,35.769 53.416,37.132 C51.233,46.574 46.626,51.341 37.007,53.434 C34.436,53.993 31.873,53.097 29.714,52.981 Z" />
+					</svg></a>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#service">services</a></li>
+					<li><a href="#work">works</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</div>
+			<!-- /.ba-nav -->
+			<h1>Creative Digital Project</h1>
+			<p>Duis mollis, est non commodo luctus,
+				nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+		</div>
+		<!-- /.ba-container -->
+	</header>
+<section id="about" class="ba-container ba-about-us">
+	<div class="ba-row">
+		<div class="ba-col-large-4">
+			<div class="ba-about--hov">
+				<svg width="50px" height="54px">
+			   <image  x="0px" y="0px" width="50px" height="54px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAA2CAQAAAAvpwIsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjARIMATs6flQpAAACpUlEQVRYw82Y65GbMBSFj3dSAOmADkwJpIKlBEqgBFIBSQWU4KQCvBWwWwHuQO7gyw9hjI31AI9ncvXHgx5H50j3Ie9QtBXKtFci6VNfOuoUPZOYllBjuLcDedRs7SKYFGqVSDrpj750UqJM78okSb/0U+fnmTQA9Itdp7RjTxJaIwRhF2ocvQUmBsYPUQJQekZkGKDbDpJigDrA1cJUW0G68B4RogKMTzL31ByA1CHjcjvNFpAWaB0y3p9T7ufigkg8PDpguFty8F0QF0gB9A/BD6O/37KsnLw9IPVDlUsGwFAtYDJgWAvSAQey2SIVAwADGRcPOswEBdaC9FMY7Ge/DfV0FuXU39HRAbgCpgvEymFmyx8o7w47m87nYg4QVxRG0k6SlEs6OuNrMkZjqVGmH49HfvME6ERnL4Aknad+T8B/c3w/StMe4yxdDxKY5hjtYO0C+ZC0XwGRS+6c75OrWAHyLt/pOQOkcV/JB20AirXO6IvCy1YCxt3vnpj63OsBj3oLiOXSR0DU2zOjSDARkhXgO48QyGUBH0wes5GYI4WDQwybV4LFRtzNuQ3yF5bdyDMJrRFTC2fqJxf9kCTtlSsZv+0iXDXqitrkdGuG2pcN1zK5ZJdU+Rg0z/rUUfOs47U1IPHf7+wtPOR5iwHJvb1FlBKeltKMhRDOCwEDjaPWDPhJQjndJ0M7q8DmLaOZKpp+Uc14QYrxfWV93RuVxvHX0qh9NH65s2HaWRX25RnzamK+kG8ePq7yNA55Qu1WvuIWZF6rh+WJl28MrBbCcqhXyBOWr74+wIV9qZuNAvnFM/YBsi6Xr23ju9PyiHnjbmst0L4pk/T7ZWHrr6R8B5K+R/wJs9WQLEhMdnsC5L8J9U+bfWl1rwWxZ/Ji25G/HuQfRzexr77avTsAAAAASUVORK5CYII=" />
+			   </svg>
+			   <h4>about us</h4>
+
+			</div>
+			<a href="#"><img src="img/Rectangle3.jpeg" alt="about-us"></a>
+		</div>
+		<div class="ba-col-large-1"></div>
+<div class="ba-col-large-7 ba-about__text">
+	<p>Nullam quis risus eget urna <span>mollis ornare</span> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+	<p><span>Morbi leo risus</span>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet <i>fermentum</i>. Sed posuere consectetur est at lobortis.</p>
+	
+	<button type="button">Learn More</button>
+</div>
+	</div>
+	<!-- /.ba-row -->
+</section>
+<section id="service" class="ba-container ba-sv">
+	<div class="ba-row ba-text-center ba-container">
+		<div class="ba-col-large-4 ba-sv-graphic">
+			<svg width="47px" height="61px">
+		   <image  x="0px" y="0px" width="47px" height="61px"  xlink:href="data:img/png;base64,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" />
+		   </svg>
+		<h4>GRAPHIC DESIGN</h4>
+		<p>Cras mattis consectetur purus sit amet fermentum.</p>
+		</div>
+		<div class="ba-col-large-4 ba-sv-web">
+			<svg width="58px" height="59px">
+		   <image  x="0px" y="0px" width="58px" height="59px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAMAAAAdOWm/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAvVBMVEVmX2D///9mX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2D///+mQpWjAAAAPXRSTlMAAI+8v8KcDIe9wJQW9FM+QDTtRzr5GegK98T8UD859sW+u8H93/7wE9TmEDszUkMVAQ74QRIX9Z+sDZek0lJfTQAAAAFiS0dEAf8CLd4AAAAHdElNRQfjARILEhtlsCP2AAAAyUlEQVRIx+3WRw+CQBAF4FWxgIUVwV5A7L2Anf//t9wdkWhC4qjXecfNfIeXvTyWTCmQdCbLMMmpj3stz4IoBRQtRveClnTOedlA04o456YlaRWeamhaT8g0XmlTQURtxVFsYmi7wz+n24ujP3S1HdGhb6GpC50HARuOwgrjCYpOn/czNl/wpRGs9PVmi6I7nZt78beeH/Y8oJiM7HmEvkSJEiVKlChRon/Rkyo3k+245wuKXh25mVxFu9Eepj0Med/DkC/2MMTz792Wdkxz2OPyAAAAAElFTkSuQmCC" />
+		   </svg>
+		<h4>WEB DEVELOPMENT</h4>
+		<p>Cras mattis consectetur purus sit amet fermentum.</p>
+		</div>
+		<div class="ba-col-large-4 ba-service">
+				<svg width="62px" height="60px">
+			   <image  x="0px" y="0px" width="62px" height="60px"  xlink:href="data:img/png;base64,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" />
+			   </svg>
+			   <h4>OUR SERVICES</h4>
+			   <p>“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”
+					- Borat -</p>
+		</div> 
+		<div class="ba-col-large-4 ba-sv-seo">
+				<svg width="50px" height="61px">
+			   <image  x="0px" y="0px" width="50px" height="61px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAA9CAMAAADYt8pWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACxFBMVEVmX2D///9mX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2D///+cIRheAAAA6nRSTlMAAJWnGaX8KwYtbra+vcKahlQLWQQ7lOv+/cdnDKL6M0HM++SwkFNCRT5zmNLugJ728Rgarz0IAwECEuBR0Vcc2xBL3Qdi3x8qUupVZOgPrhaLIeeqBWzyvMvinYHt+DAgYbp+xSiM9yVGI1DJE8o1N7iO6aPsyBRI1kfYkXuhFWDANpd3JuWyTN7atEnQL9PPMbde4eaHrbEX8PSodQl0q1g0nx7cP6xt79n5iTgOLDpcfdQKKY0RWmacs045Q9eWLnZxHV+1oHBEzjJqafWZVnk8k12KqZLVJCIbv4V/aMNKenLNgoiEj3wR30CjAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+MBEgscMSCIx64AAAThSURBVEjHjZaNX1NlFMevAy6+QPIydBOcsGXp5E0g7iYqGhNwTAUWKPIqgQMFJbEUiHwBTZQgQMAXNDU0GQgWCISkWb4kWWqWlr2YZla/v6Ln3m1wgW2X89nOOdtzv899zjnPPfehqAmLyMGR6EmTJk440XC2jkyeMlU0zcX1pelu7h5jCE+xNcRrxkxaAk4kUnqWt49lYLYMM+dQ4xFfP7kEipfnvvLqvPnKBf4SSAMCTVCQPHghXEPGIqFhMgQ7vRbOMCoiaka8SBkBqWIxQ8aWYGnkMsnc5aOR16MkEDmKVbxJGM2KaMgDSUwxseHUSi0dp+YjulVYNl88Nhnq1UEyek08pSIzqRPk2kQeskKPN2LUVnKblLxWsi6Ec8UpCPQZRtzXI9VRRVkT8Ty9JM2U77j0jEwLkuWHoBBbNVRvSJfHcQtgsvGmjxlxkObkqmwhlHijzJDHefnajE0mZKUem20TZEcUILWQu80WbEji/sqGmw9lT/L18q2cE0hncwEs1i4ssktQzFvYtpp1iorlm1i7XTJjuX2Eyi9+m7uUeQfuxOxIwU6VAMKUoJRzUpHGzVDmTAnJRrzLrUyXsYbocsl7uwSR3cF7Qlm7VxtFdAUqxYLIvv3RiZzVRxD9Pg4IEtSOKmkua8MPSok+hGphRPUBajinFhNFqA+RyUdKJ4D4o85siapHgzARebiRq2XWYRZpQrlGEClaZUb2NxKdTDeHCiLJ9JGjrC09Notor8PH5wgiLThxkrUfSU8RnZSD00LEyVqc4fbhx1CyJg0t8QKILnhJqzlh3Irqzhp8BZBZSJ7M2nMBZzlU3IxPjtolzhvaYjmnQiIyPVrOxnZvtR0ishbKyeaQ8k2PlqpD2nbBNpEUJnE1RaIz1Laam1LnGkR12UQ6ZLjILULjh08ZS7dMrEVZrC3iOJYynPcZ3Z010pNzuxFhdXf2tBhQzlWRumTEbobX+WO3YGZv3zjigB/Qb34DkpAiLZ3/814SXegA6NoTo1vguctaRA2a+iPV1I4vLO8XZTquENM3eBWGZV+6W0p07asCLdCRZ4qD6i+GN2N+i33dhgSu4TDXb0QBa6NLbg4suJVi1NPA7Aud5gk8q0xXscg36TibZ6lAzO3eIZhlbXO/c6FliXFVcIikTMipAIC+2Tq8/M7IS9823PnufGnXpl0jvSpQjxauKbEI4HbjGIxX+FGLNZpw/m/N9u9xN4ayINWb45Pm+EEvKqRsyb0twP14ahih2G3Wegswpq22CvzQnA7/weHDyXApd1SXQNb94NrY6z1+dGlEe9OlkX3Oq36iLgJYv+enwazhiGp0YSUL0S7a2smbhH+6SMpzf0hSG1A1lDMw91HvkYKfFQYgurJu0aj7jj72qOK7Tld0ywDykRNaka28+EvPmKWOO1ypFz3uOjMEkWc0dHX7fj05PhvWT32/4bYqBzZ6m3XEBVPIt2bCiMf8nVfx8HcF/vC9PhEk68k0/8YA066ktQf/fDSoto88vVyWAaxad/fZicq/3Jyek8RpCzocbSNPDxUDrne8nK8X9oSHazrjH2feSyB37N7mYR3Jmr4exqmxY6sQWl2PjOenrSENKXK0uT5I+9vtBU+a/gl80aIAGv8tHI/Uw77UjEfOKZ/dv19uTf5jB5708ZD/AS/j6FQ2awsYAAAAAElFTkSuQmCC" />
+			   </svg>
+<h4>SEO & MARKETING</h4>
+<p>Cras mattis consectetur purus sit amet fermentum.</p>
+		</div>
+		<div class="ba-col-large-4 ba-sv-mobile">
+				<svg width="36px" height="61px">
+			   <image  x="0px" y="0px" width="36px" height="61px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA9CAMAAADyBzv5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABklBMVEVmX2D///9mX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2D///8dSMV+AAAAhHRSTlMAAC6Tv8DCuHIXbO/+7WFu/LdVPUI6X9DwWH3SigcBCZbNth841XyVcFzBurm+rj6ChHMSPEtITTFtf9axsNuaOzmmAgODZXmNkozKr2Nxa2B0KIahI28qsvn2oh6Bj/iAnYX7h3Xi6fFXCKT1NhUO4z8FMtqex+CIiZzsvCKOeHt3NBBW+Hz3AAAAAWJLR0QB/wIt3gAAAAd0SU1FB+MBEgsdHpJCy7YAAAFySURBVEjH7dbZNwJRHMDxOxoVjVSIokGICCVZQkozSBIlskaWkOz7vvz+cDNHTvdomjx6mO/bvedzzvzufZgZhBAqkZGlpHByhbKMIDhTrqKgcFSFmkOVGtDqqqqFq9HXQp0BGeuhwUQXrrEJFKiZMrcgkYjWNg2iwEKLIrodEEBHdmnt7LLl6u7p/UaEHUeOX+fqE0LOftdArsEhE46GkehMhJtHI6NmscY8PCoeh8a9LrF8EzxS+hmx/Cx+ukKD2yUkIQlJ6D+jySJoikfy6YBYM8E/v31nQ3NYYb11PoxvqG08WmBMuehIdJGN+bEdJsqjJXzO5fgKrK6t44Nv5F2BURPc9CRCeSiMowBsoW1w4ygJaAd28S/nHuyTqYNDDB2lAZHHqQyGTtLckdlTDOlUZ+hcC0Evpi4yrkv8+dYruEZM5AZu44HkXTaWvWcdPwvHg/wRnp45G5GJ3XbiJcb/hiCnz/BqeRPK+K77+CSILxrZE7LKsW5sAAAAAElFTkSuQmCC" />
+			   </svg>
+<h4>MOBILE DEVELOPMENT</h4>
+<p>Cras mattis consectetur purus sit amet fermentum.</p>
+		</div>
+
+	</div>
+	<!-- /.ba-row -->
+</section>
+<section id="work" class="ba-resent">
+	<div class="ba-container">
+		<svg vvvvwidth="40px" height="60px">
+	   <image  x="0px" y="0px" width="40px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA8CAQAAAC+sDBrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjARILByma0pRiAAACaUlEQVRYw6WYXbHjMAxGNUVgCIFQCGFwC8EQymDDoBC6i+DOIsgsgkAIhMwiOPvQJP6TFSebvLS2fCz7k2S3gqzvxPVn2ilyk+3p5Prjos872wMLXZir8Z0BH77HXSPwfRLngTluiTvvAPT/418KFF75fGf9y4GOBRiu+5cDz0njtfWUZu3SKP5pwFZpvL7fmumrOUN8OfqmxP3f5gzRsquYo2MBHk1LVuQrDb+BsUkUVb7cqAfg3gTsoFyLFgqv5sAegBlXBw7AkhqYr2POM6uUwzfjBOEBEEtzTY5cmlEDnpHDkOZYDseTEYCR57E0R3Lcs8NrUiWLnLHlcEzAgsfh8CwVZLRdthx5nH0KsLbwnWDLMRV++/QULkNuG6ZnB5At0AFUpVlwwtPIDm1wDbhK8wnMp2HySFpqSxbWrLnJHxH5qhTQXyLyii4aTn6IyO+K9ZeI/Nx2pVfndGugPFYP5rK6ZBnTC8LbyOE7SxLYSzU5V0pgdxVDx8AMwMxQLW37OgP9XTE90jYEzR7YRz4eAz973QfgJ3jel4FDOPS3pl7Jilagi0tLaB7Ne5cFfMaXktDcmweUBUwuTXnHcBqYXZryruU0cE5rgeF8E9DnG2W63wA0D3pBqke9DlSENEK0AaiEmh6kfRNQTYZy1j3ND4FqupZAveCWwLteUDTltIJbAislTwNqxSwHVgueBtRmz4HVkqwDy/lTYFc/2HRgqWAKNI61GjCPsRhYi1UTmGdBDBwwrs51YJqnAWj6ZwHTShKAtWxvAMYFdwO6o58eFjAuuBvQc/CvhA30aI+/DtT+wJrsEf8AVQ6UhE4ObNgAAAAASUVORK5CYII=" />
+	   </svg>
+	<h3>RECENT WORKS</h3>
+	
+	<div class="ba-resent__slick">
+		<div class="ba-resent--slider">
+			<img src="img/Rectangle2.jpeg" alt="producto">
+		</div>
+		<div class="ba-resent--slider">
+			<img src="img/Rectangle2.jpeg" alt="producto">
+		</div>
+		<div class="ba-resent--slider">
+			<img src="img/Rectangle2.jpeg" alt="producto">
+		</div>
+		<div class="ba-resent--slider">
+				<img src="img/Rectangle2.jpeg" alt="producto">
+			</div>
+	</div>
+	<div class="ba-resent-prev">
+		<svg width="22px" height="38px">
+	<path fill-rule="evenodd"  fill="rgb(230, 230, 230)"
+	 d="M21.518,1.990 L2.423,18.999 L21.518,36.009 C21.987,36.303 22.147,36.956 21.877,37.465 C21.606,37.976 21.007,38.151 20.539,37.856 L0.482,19.989 C0.177,19.798 0.020,19.454 0.009,19.098 C0.005,19.064 0.005,19.033 0.003,18.999 C0.005,18.965 0.005,18.933 0.010,18.900 C0.020,18.544 0.177,18.200 0.482,18.008 L20.539,0.142 C21.007,-0.153 21.606,0.022 21.877,0.533 C22.147,1.042 21.987,1.695 21.518,1.990 Z"/>
+	</svg>
+	</div>
+	<div class="ba-resent-next">
+			<svg width="22px" height="38px">
+		   <path fill-rule="evenodd"  fill="rgb(230, 230, 230)"
+			d="M21.997,18.999 C21.995,19.033 21.995,19.064 21.990,19.098 C21.979,19.454 21.822,19.798 21.518,19.989 L1.461,37.856 C0.993,38.151 0.394,37.976 0.123,37.465 C-0.148,36.956 0.013,36.303 0.481,36.009 L19.576,18.999 L0.481,1.990 C0.013,1.695 -0.148,1.042 0.123,0.533 C0.394,0.022 0.993,-0.153 1.461,0.142 L21.518,18.008 C21.822,18.200 21.979,18.544 21.990,18.900 C21.995,18.933 21.995,18.965 21.997,18.999 Z"/>
+		   </svg>
+		</div>
+	<button type="button">Viev Gallery</button>
+	<!-- /.ba-resent__slick -->
+
+	</div>
+	<!-- /.ba-container -->
+
+</section>
+<section class="ba-our-team ba-container">
+		<svg width="60px" height="60px">
+	   <image  x="0px" y="0px" width="60px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVmX2D///9mX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2BmX2D////RYCL8AAAAEXRSTlMAAECPv+8gMJ9QzxCv33CAYF8FwucAAAABYktHRAH/Ai3eAAAAB3RJTUUH4wESDDckPmrIqQAAAodJREFUSMfFltm2pCAMRS2GCDIl//+zzSCClpbwcFfnSdEt4ZgcWJanYFyQFJxdhj9dPKEgaA8Bs/AqSSoNoBWRXOfgyG77hLCd6Xd4o83Ua7ORmIE1SdPuQBKbgC3x/paTmoAdnTRi5CZgouf7v4XlOe2V5JRgvr8NZCdgJNf9KiMJJ+Aod/dzVC/2AMyI1D63idXNpuCYODmM1Q3oqE96rCW1qy3pzh09Ai/G544WaJZ5+Cn+ELZ0G3YIpocYhO+y/W+wGYQdse9BRtsQLO5hMQQrCt+D4bDE37DvW79Gs4ff8Hoy7UMvGIKjYngdwkOvN9ifTChP3H3vBTYnEyoaNiN666pkQme2+3sD7knieJ1tNOeeWlKVKKJSLzNw9sxy1Xx0GG79ce2TFxgYsisch8wbvCLPnimvsMxOynF9gAFtfiUevqy+wmjF/tCi+YIxz+isr+l9r9kwb/NWYLGHTUif3XzdlVe4wnA88luaP5gKp63Fhb1tdFr13ZoF10UwSFM5XWAeX95LCFRemeNXmOd8pYIiGMbXeIIjy/d1hgxqc7dmo/MHQlltKiL+SV1QKzf0Jf3l9ulvi4P+YOoW2yzrdHw4ttht6SIeOOp/SicVItMm6zvgNpBkhU2UtYO71d8H8KxThSm23HFsMjZXADyQmB6rT0tbpMZvJzZWKlsEzzrnZ8yHUp1Rz08TDPN+3B3ZwIunPVZ4WI6u8imJkqw47TArBiu2Rm3CBqzpZTRlqEp5+lR8r0I3ODWR9LUxQOXaG+J1rmAFXUtCyEUhgoZnDnQojRvgagZrKf6otQrIWH9yZQyD2t3A8fXehmB3oUe9OcJvAwQWotinj4got2fQ1N7jH04SLTzY1kcLAAAAAElFTkSuQmCC" />
+	   </svg>
+<h4>MEET OUR TEAM</h4>
+<div class="ba-team-slider">
+	<div class="ba-team-slider--img">
+		<img src="img/Ellipse1.png" alt="#">
+		<div>
+				<ul>
+						<li><a href="#">
+							<svg width="32px" height="32px">
+						   <defs>
+						   <filter id="Filter_0">
+							   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+							   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						   </filter>
+						   
+						   </defs>
+						   <g filter="url(#Filter_0)">
+						   <path fill-rule="evenodd"  fill="rgb(1, 136, 245)"
+							d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM14.050,15.414 C15.119,14.923 15.722,14.121 15.722,12.973 C15.722,10.794 14.137,10.000 11.793,10.000 L6.000,10.000 L6.000,21.771 L11.964,21.771 C14.188,21.771 16.308,20.755 16.308,18.379 C16.308,16.922 15.550,15.824 14.050,15.414 ZM24.155,10.791 L19.224,10.791 L19.224,12.364 L24.155,12.364 L24.155,10.791 ZM21.501,13.072 C18.796,13.072 16.925,15.005 16.925,17.545 C16.925,20.166 18.692,22.000 21.501,22.000 C23.519,22.000 25.088,20.952 25.776,18.952 L23.622,18.952 C23.467,19.477 22.570,20.247 21.587,20.247 C20.226,20.247 19.468,19.305 19.399,17.830 L25.828,17.830 C26.000,15.225 24.535,13.072 21.501,13.072 ZM21.432,14.825 C22.621,14.825 23.157,15.128 23.381,16.307 L19.399,16.307 C19.433,15.652 19.881,14.825 21.432,14.825 ZM11.602,19.870 L8.475,19.870 L8.475,16.659 L11.654,16.659 C12.809,16.659 13.524,17.134 13.524,18.329 C13.524,19.543 12.671,19.870 11.602,19.870 ZM11.447,14.709 L8.475,14.709 L8.475,11.974 L11.241,11.974 C12.205,11.974 13.102,12.204 13.102,13.318 C13.102,14.300 12.395,14.709 11.447,14.709 Z"/>
+						   </g>
+						   </svg></a></li>
+						<li><a href="#">
+							<svg width="32px" height="32px">
+						   <defs>
+						   <filter id="Filter_0">
+							   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+							   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						   </filter>
+						   
+						   </defs>
+						   <g filter="url(#Filter_0)">
+						   <path fill-rule="evenodd"  fill="rgb(0, 90, 135)"
+							d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM9.788,7.469 C9.467,7.156 9.083,6.999 8.634,6.999 C8.185,6.999 7.802,7.153 7.484,7.459 C7.166,7.766 7.008,8.135 7.008,8.568 C7.008,9.018 7.168,9.402 7.489,9.717 C7.810,10.032 8.198,10.190 8.653,10.190 C9.095,10.190 9.475,10.035 9.793,9.726 C10.111,9.417 10.270,9.043 10.270,8.604 C10.270,8.160 10.109,7.781 9.788,7.469 ZM10.275,10.993 L7.000,10.993 L7.000,23.000 L10.275,23.000 L10.275,10.993 ZM25.000,15.438 C25.000,14.017 24.510,12.944 23.649,12.219 C22.624,11.365 21.614,10.938 20.145,10.938 C19.428,10.938 18.964,11.053 18.280,11.285 C17.595,11.516 16.848,12.003 16.005,12.594 L16.005,10.993 L12.730,10.993 L12.730,23.000 L15.988,22.998 L15.988,18.640 C15.988,17.358 16.042,16.523 16.151,16.138 C16.359,15.398 16.733,14.819 17.272,14.400 C17.811,13.981 18.456,13.772 19.208,13.772 C19.788,13.772 20.275,13.898 20.669,14.151 C21.063,14.404 21.339,14.772 21.498,15.255 C21.656,15.739 21.736,16.716 21.736,18.188 L21.736,22.998 L25.000,22.998 L25.000,15.438 Z"/>
+						   </g>
+						   </svg></a></li>
+						<li><a href="#">
+							<svg width="32px" height="32px">
+						   <defs>
+						   <filter id="Filter_0">
+							   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+							   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						   </filter>
+						   
+						   </defs>
+						   <g filter="url(#Filter_0)">
+						   <path fill-rule="evenodd"  fill="rgb(218, 73, 53)"
+							d="M16.000,32.010 C15.428,32.010 14.865,31.977 14.309,31.919 C16.885,30.662 18.246,28.483 18.246,26.301 C18.246,23.854 16.879,22.649 15.373,21.338 L14.141,20.344 C13.765,20.026 13.252,19.601 13.252,18.821 C13.252,18.042 13.765,17.545 14.210,17.084 C15.646,15.914 17.083,14.674 17.083,12.051 C17.083,9.356 15.441,7.938 14.654,7.265 L16.775,7.265 L18.964,5.989 L11.918,5.989 C10.070,5.989 7.745,6.273 5.795,7.938 C4.324,9.250 3.605,11.058 3.605,12.689 C3.605,15.454 5.658,18.254 9.284,18.254 C9.626,18.254 10.002,18.218 10.379,18.183 C10.207,18.608 10.037,18.962 10.037,19.566 C10.037,20.664 10.583,21.338 11.062,21.976 C9.524,22.082 6.650,22.259 4.529,23.606 C3.800,24.054 3.259,24.577 2.859,25.122 C1.061,22.534 0.000,19.395 0.000,16.004 C0.000,7.166 7.163,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.166 32.000,16.004 C32.000,24.844 24.837,32.010 16.000,32.010 ZM26.906,9.000 L23.906,9.000 L23.906,6.000 L21.906,6.000 L21.906,9.000 L18.906,9.000 L18.906,11.000 L21.906,11.000 L21.906,14.000 L23.906,14.000 L23.906,11.000 L26.906,11.000 L26.906,9.000 ZM6.615,10.951 C6.615,10.030 6.786,9.073 7.368,8.329 C7.916,7.620 8.873,7.158 9.762,7.158 C12.603,7.158 14.073,11.128 14.073,13.681 C14.073,14.319 14.004,15.454 13.219,16.269 C12.671,16.836 11.746,17.261 10.891,17.261 C7.949,17.261 6.615,13.326 6.615,10.951 ZM7.847,23.536 C9.284,23.039 11.131,22.967 11.439,22.967 C11.780,22.967 11.952,22.967 12.225,23.004 C14.826,24.918 15.954,25.875 15.954,27.683 C15.954,29.658 14.534,31.163 11.864,31.450 C9.229,30.745 6.863,29.393 4.949,27.561 C4.937,27.435 4.905,27.316 4.905,27.187 C4.905,24.670 7.095,23.819 7.847,23.536 Z"/>
+						   </g>
+						   </svg></a></li>
+						<li><a href="#">
+							<svg width="32px" height="32px">
+						   <defs>
+						   <filter id="Filter_0">
+							   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+							   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						   </filter>
+						   
+						   </defs>
+						   <g filter="url(#Filter_0)">
+						   <path fill-rule="evenodd"  fill="rgb(68, 99, 177)"
+							d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM20.000,10.000 L22.000,10.000 L22.000,6.000 C22.000,6.000 22.000,6.000 18.126,6.000 C14.252,6.000 15.000,10.000 15.000,10.000 L15.000,13.000 L13.000,13.000 L13.000,17.000 L15.000,17.000 L15.000,26.000 L19.000,26.000 L19.000,17.000 L21.000,17.000 L22.000,13.000 L19.000,13.000 C19.000,13.000 19.000,11.820 19.000,11.000 C19.000,10.179 20.000,10.000 20.000,10.000 Z"/>
+						   </g>
+						   </svg></a></li>
+						<li><a href="#">
+							<svg width="32px" height="32px">
+						   <defs>
+						   <filter id="Filter_0">
+							   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+							   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						   </filter>
+						   
+						   </defs>
+						   <g filter="url(#Filter_0)">
+						   <path fill-rule="evenodd"  fill="rgb(78, 158, 220)"
+							d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM25.399,8.606 C24.686,9.069 23.895,9.405 23.054,9.586 C22.381,8.801 21.421,8.310 20.358,8.310 C18.319,8.310 16.665,10.119 16.665,12.350 C16.665,12.666 16.698,12.975 16.761,13.271 C13.691,13.102 10.970,11.494 9.148,9.050 C8.831,9.647 8.648,10.341 8.648,11.081 C8.648,12.482 9.300,13.719 10.291,14.443 C9.686,14.422 9.117,14.241 8.619,13.938 C8.618,13.955 8.618,13.971 8.618,13.989 C8.618,15.946 9.891,17.578 11.581,17.950 C11.271,18.042 10.945,18.092 10.608,18.092 C10.370,18.092 10.138,18.066 9.913,18.019 C10.383,19.624 11.747,20.792 13.363,20.824 C12.099,21.908 10.507,22.554 8.776,22.554 C8.478,22.554 8.184,22.535 7.895,22.497 C9.530,23.643 11.471,24.312 13.557,24.312 C20.350,24.312 24.065,18.157 24.065,12.818 C24.065,12.643 24.061,12.469 24.054,12.296 C24.776,11.727 25.402,11.015 25.897,10.205 C25.234,10.526 24.523,10.743 23.776,10.841 C24.538,10.341 25.124,9.549 25.399,8.606 Z"/>
+						   </g>
+						   </svg></a></li>
+					</ul>
+		</div>
+	</div>
+	<div class="ba-team-slider--img">
+			<img src="img/Ellipse2.png" alt="#">
+			<div>
+					<ul>
+							<li><a href="#">
+								<svg width="32px" height="32px">
+							   <defs>
+							   <filter id="Filter_0">
+								   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+								   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+								   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+							   </filter>
+							   
+							   </defs>
+							   <g filter="url(#Filter_0)">
+							   <path fill-rule="evenodd"  fill="rgb(1, 136, 245)"
+								d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM14.050,15.414 C15.119,14.923 15.722,14.121 15.722,12.973 C15.722,10.794 14.137,10.000 11.793,10.000 L6.000,10.000 L6.000,21.771 L11.964,21.771 C14.188,21.771 16.308,20.755 16.308,18.379 C16.308,16.922 15.550,15.824 14.050,15.414 ZM24.155,10.791 L19.224,10.791 L19.224,12.364 L24.155,12.364 L24.155,10.791 ZM21.501,13.072 C18.796,13.072 16.925,15.005 16.925,17.545 C16.925,20.166 18.692,22.000 21.501,22.000 C23.519,22.000 25.088,20.952 25.776,18.952 L23.622,18.952 C23.467,19.477 22.570,20.247 21.587,20.247 C20.226,20.247 19.468,19.305 19.399,17.830 L25.828,17.830 C26.000,15.225 24.535,13.072 21.501,13.072 ZM21.432,14.825 C22.621,14.825 23.157,15.128 23.381,16.307 L19.399,16.307 C19.433,15.652 19.881,14.825 21.432,14.825 ZM11.602,19.870 L8.475,19.870 L8.475,16.659 L11.654,16.659 C12.809,16.659 13.524,17.134 13.524,18.329 C13.524,19.543 12.671,19.870 11.602,19.870 ZM11.447,14.709 L8.475,14.709 L8.475,11.974 L11.241,11.974 C12.205,11.974 13.102,12.204 13.102,13.318 C13.102,14.300 12.395,14.709 11.447,14.709 Z"/>
+							   </g>
+							   </svg></a></li>
+							<li><a href="#">
+								<svg width="32px" height="32px">
+							   <defs>
+							   <filter id="Filter_0">
+								   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+								   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+								   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+							   </filter>
+							   
+							   </defs>
+							   <g filter="url(#Filter_0)">
+							   <path fill-rule="evenodd"  fill="rgb(0, 90, 135)"
+								d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM9.788,7.469 C9.467,7.156 9.083,6.999 8.634,6.999 C8.185,6.999 7.802,7.153 7.484,7.459 C7.166,7.766 7.008,8.135 7.008,8.568 C7.008,9.018 7.168,9.402 7.489,9.717 C7.810,10.032 8.198,10.190 8.653,10.190 C9.095,10.190 9.475,10.035 9.793,9.726 C10.111,9.417 10.270,9.043 10.270,8.604 C10.270,8.160 10.109,7.781 9.788,7.469 ZM10.275,10.993 L7.000,10.993 L7.000,23.000 L10.275,23.000 L10.275,10.993 ZM25.000,15.438 C25.000,14.017 24.510,12.944 23.649,12.219 C22.624,11.365 21.614,10.938 20.145,10.938 C19.428,10.938 18.964,11.053 18.280,11.285 C17.595,11.516 16.848,12.003 16.005,12.594 L16.005,10.993 L12.730,10.993 L12.730,23.000 L15.988,22.998 L15.988,18.640 C15.988,17.358 16.042,16.523 16.151,16.138 C16.359,15.398 16.733,14.819 17.272,14.400 C17.811,13.981 18.456,13.772 19.208,13.772 C19.788,13.772 20.275,13.898 20.669,14.151 C21.063,14.404 21.339,14.772 21.498,15.255 C21.656,15.739 21.736,16.716 21.736,18.188 L21.736,22.998 L25.000,22.998 L25.000,15.438 Z"/>
+							   </g>
+							   </svg></a></li>
+							<li><a href="#">
+								<svg width="32px" height="32px">
+							   <defs>
+							   <filter id="Filter_0">
+								   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+								   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+								   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+							   </filter>
+							   
+							   </defs>
+							   <g filter="url(#Filter_0)">
+							   <path fill-rule="evenodd"  fill="rgb(218, 73, 53)"
+								d="M16.000,32.010 C15.428,32.010 14.865,31.977 14.309,31.919 C16.885,30.662 18.246,28.483 18.246,26.301 C18.246,23.854 16.879,22.649 15.373,21.338 L14.141,20.344 C13.765,20.026 13.252,19.601 13.252,18.821 C13.252,18.042 13.765,17.545 14.210,17.084 C15.646,15.914 17.083,14.674 17.083,12.051 C17.083,9.356 15.441,7.938 14.654,7.265 L16.775,7.265 L18.964,5.989 L11.918,5.989 C10.070,5.989 7.745,6.273 5.795,7.938 C4.324,9.250 3.605,11.058 3.605,12.689 C3.605,15.454 5.658,18.254 9.284,18.254 C9.626,18.254 10.002,18.218 10.379,18.183 C10.207,18.608 10.037,18.962 10.037,19.566 C10.037,20.664 10.583,21.338 11.062,21.976 C9.524,22.082 6.650,22.259 4.529,23.606 C3.800,24.054 3.259,24.577 2.859,25.122 C1.061,22.534 0.000,19.395 0.000,16.004 C0.000,7.166 7.163,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.166 32.000,16.004 C32.000,24.844 24.837,32.010 16.000,32.010 ZM26.906,9.000 L23.906,9.000 L23.906,6.000 L21.906,6.000 L21.906,9.000 L18.906,9.000 L18.906,11.000 L21.906,11.000 L21.906,14.000 L23.906,14.000 L23.906,11.000 L26.906,11.000 L26.906,9.000 ZM6.615,10.951 C6.615,10.030 6.786,9.073 7.368,8.329 C7.916,7.620 8.873,7.158 9.762,7.158 C12.603,7.158 14.073,11.128 14.073,13.681 C14.073,14.319 14.004,15.454 13.219,16.269 C12.671,16.836 11.746,17.261 10.891,17.261 C7.949,17.261 6.615,13.326 6.615,10.951 ZM7.847,23.536 C9.284,23.039 11.131,22.967 11.439,22.967 C11.780,22.967 11.952,22.967 12.225,23.004 C14.826,24.918 15.954,25.875 15.954,27.683 C15.954,29.658 14.534,31.163 11.864,31.450 C9.229,30.745 6.863,29.393 4.949,27.561 C4.937,27.435 4.905,27.316 4.905,27.187 C4.905,24.670 7.095,23.819 7.847,23.536 Z"/>
+							   </g>
+							   </svg></a></li>
+							<li><a href="#">
+								<svg width="32px" height="32px">
+							   <defs>
+							   <filter id="Filter_0">
+								   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+								   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+								   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+							   </filter>
+							   
+							   </defs>
+							   <g filter="url(#Filter_0)">
+							   <path fill-rule="evenodd"  fill="rgb(68, 99, 177)"
+								d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM20.000,10.000 L22.000,10.000 L22.000,6.000 C22.000,6.000 22.000,6.000 18.126,6.000 C14.252,6.000 15.000,10.000 15.000,10.000 L15.000,13.000 L13.000,13.000 L13.000,17.000 L15.000,17.000 L15.000,26.000 L19.000,26.000 L19.000,17.000 L21.000,17.000 L22.000,13.000 L19.000,13.000 C19.000,13.000 19.000,11.820 19.000,11.000 C19.000,10.179 20.000,10.000 20.000,10.000 Z"/>
+							   </g>
+							   </svg></a></li>
+							<li><a href="#">
+								<svg width="32px" height="32px">
+							   <defs>
+							   <filter id="Filter_0">
+								   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+								   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+								   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+							   </filter>
+							   
+							   </defs>
+							   <g filter="url(#Filter_0)">
+							   <path fill-rule="evenodd"  fill="rgb(78, 158, 220)"
+								d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM25.399,8.606 C24.686,9.069 23.895,9.405 23.054,9.586 C22.381,8.801 21.421,8.310 20.358,8.310 C18.319,8.310 16.665,10.119 16.665,12.350 C16.665,12.666 16.698,12.975 16.761,13.271 C13.691,13.102 10.970,11.494 9.148,9.050 C8.831,9.647 8.648,10.341 8.648,11.081 C8.648,12.482 9.300,13.719 10.291,14.443 C9.686,14.422 9.117,14.241 8.619,13.938 C8.618,13.955 8.618,13.971 8.618,13.989 C8.618,15.946 9.891,17.578 11.581,17.950 C11.271,18.042 10.945,18.092 10.608,18.092 C10.370,18.092 10.138,18.066 9.913,18.019 C10.383,19.624 11.747,20.792 13.363,20.824 C12.099,21.908 10.507,22.554 8.776,22.554 C8.478,22.554 8.184,22.535 7.895,22.497 C9.530,23.643 11.471,24.312 13.557,24.312 C20.350,24.312 24.065,18.157 24.065,12.818 C24.065,12.643 24.061,12.469 24.054,12.296 C24.776,11.727 25.402,11.015 25.897,10.205 C25.234,10.526 24.523,10.743 23.776,10.841 C24.538,10.341 25.124,9.549 25.399,8.606 Z"/>
+							   </g>
+							   </svg></a></li>
+						</ul>
+			</div>
+		</div>
+		<div class="ba-team-slider--img">
+				<img src="img/Ellipse3.png" alt="#">
+				<div>
+						<ul>
+								<li><a href="#">
+									<svg width="32px" height="32px">
+								   <defs>
+								   <filter id="Filter_0">
+									   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+									   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+									   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+								   </filter>
+								   
+								   </defs>
+								   <g filter="url(#Filter_0)">
+								   <path fill-rule="evenodd"  fill="rgb(1, 136, 245)"
+									d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM14.050,15.414 C15.119,14.923 15.722,14.121 15.722,12.973 C15.722,10.794 14.137,10.000 11.793,10.000 L6.000,10.000 L6.000,21.771 L11.964,21.771 C14.188,21.771 16.308,20.755 16.308,18.379 C16.308,16.922 15.550,15.824 14.050,15.414 ZM24.155,10.791 L19.224,10.791 L19.224,12.364 L24.155,12.364 L24.155,10.791 ZM21.501,13.072 C18.796,13.072 16.925,15.005 16.925,17.545 C16.925,20.166 18.692,22.000 21.501,22.000 C23.519,22.000 25.088,20.952 25.776,18.952 L23.622,18.952 C23.467,19.477 22.570,20.247 21.587,20.247 C20.226,20.247 19.468,19.305 19.399,17.830 L25.828,17.830 C26.000,15.225 24.535,13.072 21.501,13.072 ZM21.432,14.825 C22.621,14.825 23.157,15.128 23.381,16.307 L19.399,16.307 C19.433,15.652 19.881,14.825 21.432,14.825 ZM11.602,19.870 L8.475,19.870 L8.475,16.659 L11.654,16.659 C12.809,16.659 13.524,17.134 13.524,18.329 C13.524,19.543 12.671,19.870 11.602,19.870 ZM11.447,14.709 L8.475,14.709 L8.475,11.974 L11.241,11.974 C12.205,11.974 13.102,12.204 13.102,13.318 C13.102,14.300 12.395,14.709 11.447,14.709 Z"/>
+								   </g>
+								   </svg></a></li>
+								<li><a href="#">
+									<svg width="32px" height="32px">
+								   <defs>
+								   <filter id="Filter_0">
+									   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+									   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+									   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+								   </filter>
+								   
+								   </defs>
+								   <g filter="url(#Filter_0)">
+								   <path fill-rule="evenodd"  fill="rgb(0, 90, 135)"
+									d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM9.788,7.469 C9.467,7.156 9.083,6.999 8.634,6.999 C8.185,6.999 7.802,7.153 7.484,7.459 C7.166,7.766 7.008,8.135 7.008,8.568 C7.008,9.018 7.168,9.402 7.489,9.717 C7.810,10.032 8.198,10.190 8.653,10.190 C9.095,10.190 9.475,10.035 9.793,9.726 C10.111,9.417 10.270,9.043 10.270,8.604 C10.270,8.160 10.109,7.781 9.788,7.469 ZM10.275,10.993 L7.000,10.993 L7.000,23.000 L10.275,23.000 L10.275,10.993 ZM25.000,15.438 C25.000,14.017 24.510,12.944 23.649,12.219 C22.624,11.365 21.614,10.938 20.145,10.938 C19.428,10.938 18.964,11.053 18.280,11.285 C17.595,11.516 16.848,12.003 16.005,12.594 L16.005,10.993 L12.730,10.993 L12.730,23.000 L15.988,22.998 L15.988,18.640 C15.988,17.358 16.042,16.523 16.151,16.138 C16.359,15.398 16.733,14.819 17.272,14.400 C17.811,13.981 18.456,13.772 19.208,13.772 C19.788,13.772 20.275,13.898 20.669,14.151 C21.063,14.404 21.339,14.772 21.498,15.255 C21.656,15.739 21.736,16.716 21.736,18.188 L21.736,22.998 L25.000,22.998 L25.000,15.438 Z"/>
+								   </g>
+								   </svg></a></li>
+								<li><a href="#">
+									<svg width="32px" height="32px">
+								   <defs>
+								   <filter id="Filter_0">
+									   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+									   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+									   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+								   </filter>
+								   
+								   </defs>
+								   <g filter="url(#Filter_0)">
+								   <path fill-rule="evenodd"  fill="rgb(218, 73, 53)"
+									d="M16.000,32.010 C15.428,32.010 14.865,31.977 14.309,31.919 C16.885,30.662 18.246,28.483 18.246,26.301 C18.246,23.854 16.879,22.649 15.373,21.338 L14.141,20.344 C13.765,20.026 13.252,19.601 13.252,18.821 C13.252,18.042 13.765,17.545 14.210,17.084 C15.646,15.914 17.083,14.674 17.083,12.051 C17.083,9.356 15.441,7.938 14.654,7.265 L16.775,7.265 L18.964,5.989 L11.918,5.989 C10.070,5.989 7.745,6.273 5.795,7.938 C4.324,9.250 3.605,11.058 3.605,12.689 C3.605,15.454 5.658,18.254 9.284,18.254 C9.626,18.254 10.002,18.218 10.379,18.183 C10.207,18.608 10.037,18.962 10.037,19.566 C10.037,20.664 10.583,21.338 11.062,21.976 C9.524,22.082 6.650,22.259 4.529,23.606 C3.800,24.054 3.259,24.577 2.859,25.122 C1.061,22.534 0.000,19.395 0.000,16.004 C0.000,7.166 7.163,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.166 32.000,16.004 C32.000,24.844 24.837,32.010 16.000,32.010 ZM26.906,9.000 L23.906,9.000 L23.906,6.000 L21.906,6.000 L21.906,9.000 L18.906,9.000 L18.906,11.000 L21.906,11.000 L21.906,14.000 L23.906,14.000 L23.906,11.000 L26.906,11.000 L26.906,9.000 ZM6.615,10.951 C6.615,10.030 6.786,9.073 7.368,8.329 C7.916,7.620 8.873,7.158 9.762,7.158 C12.603,7.158 14.073,11.128 14.073,13.681 C14.073,14.319 14.004,15.454 13.219,16.269 C12.671,16.836 11.746,17.261 10.891,17.261 C7.949,17.261 6.615,13.326 6.615,10.951 ZM7.847,23.536 C9.284,23.039 11.131,22.967 11.439,22.967 C11.780,22.967 11.952,22.967 12.225,23.004 C14.826,24.918 15.954,25.875 15.954,27.683 C15.954,29.658 14.534,31.163 11.864,31.450 C9.229,30.745 6.863,29.393 4.949,27.561 C4.937,27.435 4.905,27.316 4.905,27.187 C4.905,24.670 7.095,23.819 7.847,23.536 Z"/>
+								   </g>
+								   </svg></a></li>
+								<li><a href="#">
+									<svg width="32px" height="32px">
+								   <defs>
+								   <filter id="Filter_0">
+									   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+									   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+									   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+								   </filter>
+								   
+								   </defs>
+								   <g filter="url(#Filter_0)">
+								   <path fill-rule="evenodd"  fill="rgb(68, 99, 177)"
+									d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM20.000,10.000 L22.000,10.000 L22.000,6.000 C22.000,6.000 22.000,6.000 18.126,6.000 C14.252,6.000 15.000,10.000 15.000,10.000 L15.000,13.000 L13.000,13.000 L13.000,17.000 L15.000,17.000 L15.000,26.000 L19.000,26.000 L19.000,17.000 L21.000,17.000 L22.000,13.000 L19.000,13.000 C19.000,13.000 19.000,11.820 19.000,11.000 C19.000,10.179 20.000,10.000 20.000,10.000 Z"/>
+								   </g>
+								   </svg></a></li>
+								<li><a href="#">
+									<svg width="32px" height="32px">
+								   <defs>
+								   <filter id="Filter_0">
+									   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+									   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+									   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+								   </filter>
+								   
+								   </defs>
+								   <g filter="url(#Filter_0)">
+								   <path fill-rule="evenodd"  fill="rgb(78, 158, 220)"
+									d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM25.399,8.606 C24.686,9.069 23.895,9.405 23.054,9.586 C22.381,8.801 21.421,8.310 20.358,8.310 C18.319,8.310 16.665,10.119 16.665,12.350 C16.665,12.666 16.698,12.975 16.761,13.271 C13.691,13.102 10.970,11.494 9.148,9.050 C8.831,9.647 8.648,10.341 8.648,11.081 C8.648,12.482 9.300,13.719 10.291,14.443 C9.686,14.422 9.117,14.241 8.619,13.938 C8.618,13.955 8.618,13.971 8.618,13.989 C8.618,15.946 9.891,17.578 11.581,17.950 C11.271,18.042 10.945,18.092 10.608,18.092 C10.370,18.092 10.138,18.066 9.913,18.019 C10.383,19.624 11.747,20.792 13.363,20.824 C12.099,21.908 10.507,22.554 8.776,22.554 C8.478,22.554 8.184,22.535 7.895,22.497 C9.530,23.643 11.471,24.312 13.557,24.312 C20.350,24.312 24.065,18.157 24.065,12.818 C24.065,12.643 24.061,12.469 24.054,12.296 C24.776,11.727 25.402,11.015 25.897,10.205 C25.234,10.526 24.523,10.743 23.776,10.841 C24.538,10.341 25.124,9.549 25.399,8.606 Z"/>
+								   </g>
+								   </svg></a></li>
+							</ul>
+				</div>
+			</div>
+</div>
+<div class="ba-team-prev">
+		<svg width="22px" height="38px">
+	<path fill-rule="evenodd"  fill="#665f60;"
+	 d="M21.518,1.990 L2.423,18.999 L21.518,36.009 C21.987,36.303 22.147,36.956 21.877,37.465 C21.606,37.976 21.007,38.151 20.539,37.856 L0.482,19.989 C0.177,19.798 0.020,19.454 0.009,19.098 C0.005,19.064 0.005,19.033 0.003,18.999 C0.005,18.965 0.005,18.933 0.010,18.900 C0.020,18.544 0.177,18.200 0.482,18.008 L20.539,0.142 C21.007,-0.153 21.606,0.022 21.877,0.533 C22.147,1.042 21.987,1.695 21.518,1.990 Z"/>
+	</svg>
+	</div>
+	<div class="ba-team-next">
+			<svg width="22px" height="38px">
+		   <path fill-rule="evenodd"  fill="#665f60;"
+			d="M21.997,18.999 C21.995,19.033 21.995,19.064 21.990,19.098 C21.979,19.454 21.822,19.798 21.518,19.989 L1.461,37.856 C0.993,38.151 0.394,37.976 0.123,37.465 C-0.148,36.956 0.013,36.303 0.481,36.009 L19.576,18.999 L0.481,1.990 C0.013,1.695 -0.148,1.042 0.123,0.533 C0.394,0.022 0.993,-0.153 1.461,0.142 L21.518,18.008 C21.822,18.200 21.979,18.544 21.990,18.900 C21.995,18.933 21.995,18.965 21.997,18.999 Z"/>
+		   </svg>
+		</div>
+</section>
+<section id="contact" class="ba-map">
+
+</section>
+<footer class="ba-footer">
+<div class="ba-container">
+	
+	<p>©2014 <span>tulus</span>driyo. All Rights Reserved.</p>
+	<ul>
+		<li><a href="#">
+			<svg width="32px" height="32px">
+		   <defs>
+		   <filter id="Filter_0">
+			   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+			   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+			   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+		   </filter>
+		   
+		   </defs>
+		   <g filter="url(#Filter_0)">
+		   <path fill-rule="evenodd"  fill="rgb(1, 136, 245)"
+			d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM14.050,15.414 C15.119,14.923 15.722,14.121 15.722,12.973 C15.722,10.794 14.137,10.000 11.793,10.000 L6.000,10.000 L6.000,21.771 L11.964,21.771 C14.188,21.771 16.308,20.755 16.308,18.379 C16.308,16.922 15.550,15.824 14.050,15.414 ZM24.155,10.791 L19.224,10.791 L19.224,12.364 L24.155,12.364 L24.155,10.791 ZM21.501,13.072 C18.796,13.072 16.925,15.005 16.925,17.545 C16.925,20.166 18.692,22.000 21.501,22.000 C23.519,22.000 25.088,20.952 25.776,18.952 L23.622,18.952 C23.467,19.477 22.570,20.247 21.587,20.247 C20.226,20.247 19.468,19.305 19.399,17.830 L25.828,17.830 C26.000,15.225 24.535,13.072 21.501,13.072 ZM21.432,14.825 C22.621,14.825 23.157,15.128 23.381,16.307 L19.399,16.307 C19.433,15.652 19.881,14.825 21.432,14.825 ZM11.602,19.870 L8.475,19.870 L8.475,16.659 L11.654,16.659 C12.809,16.659 13.524,17.134 13.524,18.329 C13.524,19.543 12.671,19.870 11.602,19.870 ZM11.447,14.709 L8.475,14.709 L8.475,11.974 L11.241,11.974 C12.205,11.974 13.102,12.204 13.102,13.318 C13.102,14.300 12.395,14.709 11.447,14.709 Z"/>
+		   </g>
+		   </svg></a></li>
+		<li><a href="#">
+			<svg width="32px" height="32px">
+		   <defs>
+		   <filter id="Filter_0">
+			   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+			   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+			   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+		   </filter>
+		   
+		   </defs>
+		   <g filter="url(#Filter_0)">
+		   <path fill-rule="evenodd"  fill="rgb(0, 90, 135)"
+			d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM9.788,7.469 C9.467,7.156 9.083,6.999 8.634,6.999 C8.185,6.999 7.802,7.153 7.484,7.459 C7.166,7.766 7.008,8.135 7.008,8.568 C7.008,9.018 7.168,9.402 7.489,9.717 C7.810,10.032 8.198,10.190 8.653,10.190 C9.095,10.190 9.475,10.035 9.793,9.726 C10.111,9.417 10.270,9.043 10.270,8.604 C10.270,8.160 10.109,7.781 9.788,7.469 ZM10.275,10.993 L7.000,10.993 L7.000,23.000 L10.275,23.000 L10.275,10.993 ZM25.000,15.438 C25.000,14.017 24.510,12.944 23.649,12.219 C22.624,11.365 21.614,10.938 20.145,10.938 C19.428,10.938 18.964,11.053 18.280,11.285 C17.595,11.516 16.848,12.003 16.005,12.594 L16.005,10.993 L12.730,10.993 L12.730,23.000 L15.988,22.998 L15.988,18.640 C15.988,17.358 16.042,16.523 16.151,16.138 C16.359,15.398 16.733,14.819 17.272,14.400 C17.811,13.981 18.456,13.772 19.208,13.772 C19.788,13.772 20.275,13.898 20.669,14.151 C21.063,14.404 21.339,14.772 21.498,15.255 C21.656,15.739 21.736,16.716 21.736,18.188 L21.736,22.998 L25.000,22.998 L25.000,15.438 Z"/>
+		   </g>
+		   </svg></a></li>
+		<li><a href="#">
+			<svg width="32px" height="32px">
+		   <defs>
+		   <filter id="Filter_0">
+			   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+			   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+			   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+		   </filter>
+		   
+		   </defs>
+		   <g filter="url(#Filter_0)">
+		   <path fill-rule="evenodd"  fill="rgb(218, 73, 53)"
+			d="M16.000,32.010 C15.428,32.010 14.865,31.977 14.309,31.919 C16.885,30.662 18.246,28.483 18.246,26.301 C18.246,23.854 16.879,22.649 15.373,21.338 L14.141,20.344 C13.765,20.026 13.252,19.601 13.252,18.821 C13.252,18.042 13.765,17.545 14.210,17.084 C15.646,15.914 17.083,14.674 17.083,12.051 C17.083,9.356 15.441,7.938 14.654,7.265 L16.775,7.265 L18.964,5.989 L11.918,5.989 C10.070,5.989 7.745,6.273 5.795,7.938 C4.324,9.250 3.605,11.058 3.605,12.689 C3.605,15.454 5.658,18.254 9.284,18.254 C9.626,18.254 10.002,18.218 10.379,18.183 C10.207,18.608 10.037,18.962 10.037,19.566 C10.037,20.664 10.583,21.338 11.062,21.976 C9.524,22.082 6.650,22.259 4.529,23.606 C3.800,24.054 3.259,24.577 2.859,25.122 C1.061,22.534 0.000,19.395 0.000,16.004 C0.000,7.166 7.163,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.166 32.000,16.004 C32.000,24.844 24.837,32.010 16.000,32.010 ZM26.906,9.000 L23.906,9.000 L23.906,6.000 L21.906,6.000 L21.906,9.000 L18.906,9.000 L18.906,11.000 L21.906,11.000 L21.906,14.000 L23.906,14.000 L23.906,11.000 L26.906,11.000 L26.906,9.000 ZM6.615,10.951 C6.615,10.030 6.786,9.073 7.368,8.329 C7.916,7.620 8.873,7.158 9.762,7.158 C12.603,7.158 14.073,11.128 14.073,13.681 C14.073,14.319 14.004,15.454 13.219,16.269 C12.671,16.836 11.746,17.261 10.891,17.261 C7.949,17.261 6.615,13.326 6.615,10.951 ZM7.847,23.536 C9.284,23.039 11.131,22.967 11.439,22.967 C11.780,22.967 11.952,22.967 12.225,23.004 C14.826,24.918 15.954,25.875 15.954,27.683 C15.954,29.658 14.534,31.163 11.864,31.450 C9.229,30.745 6.863,29.393 4.949,27.561 C4.937,27.435 4.905,27.316 4.905,27.187 C4.905,24.670 7.095,23.819 7.847,23.536 Z"/>
+		   </g>
+		   </svg></a></li>
+		<li><a href="#">
+			<svg width="32px" height="32px">
+		   <defs>
+		   <filter id="Filter_0">
+			   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+			   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+			   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+		   </filter>
+		   
+		   </defs>
+		   <g filter="url(#Filter_0)">
+		   <path fill-rule="evenodd"  fill="rgb(68, 99, 177)"
+			d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM20.000,10.000 L22.000,10.000 L22.000,6.000 C22.000,6.000 22.000,6.000 18.126,6.000 C14.252,6.000 15.000,10.000 15.000,10.000 L15.000,13.000 L13.000,13.000 L13.000,17.000 L15.000,17.000 L15.000,26.000 L19.000,26.000 L19.000,17.000 L21.000,17.000 L22.000,13.000 L19.000,13.000 C19.000,13.000 19.000,11.820 19.000,11.000 C19.000,10.179 20.000,10.000 20.000,10.000 Z"/>
+		   </g>
+		   </svg></a></li>
+		<li><a href="#">
+			<svg width="32px" height="32px">
+		   <defs>
+		   <filter id="Filter_0">
+			   <feFlood flood-color="rgb(235, 235, 235)" flood-opacity="1" result="floodOut" />
+			   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+			   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+		   </filter>
+		   
+		   </defs>
+		   <g filter="url(#Filter_0)">
+		   <path fill-rule="evenodd"  fill="rgb(78, 158, 220)"
+			d="M16.000,32.000 C7.164,32.000 0.000,24.837 0.000,16.000 C0.000,7.163 7.164,-0.000 16.000,-0.000 C24.837,-0.000 32.000,7.163 32.000,16.000 C32.000,24.837 24.837,32.000 16.000,32.000 ZM25.399,8.606 C24.686,9.069 23.895,9.405 23.054,9.586 C22.381,8.801 21.421,8.310 20.358,8.310 C18.319,8.310 16.665,10.119 16.665,12.350 C16.665,12.666 16.698,12.975 16.761,13.271 C13.691,13.102 10.970,11.494 9.148,9.050 C8.831,9.647 8.648,10.341 8.648,11.081 C8.648,12.482 9.300,13.719 10.291,14.443 C9.686,14.422 9.117,14.241 8.619,13.938 C8.618,13.955 8.618,13.971 8.618,13.989 C8.618,15.946 9.891,17.578 11.581,17.950 C11.271,18.042 10.945,18.092 10.608,18.092 C10.370,18.092 10.138,18.066 9.913,18.019 C10.383,19.624 11.747,20.792 13.363,20.824 C12.099,21.908 10.507,22.554 8.776,22.554 C8.478,22.554 8.184,22.535 7.895,22.497 C9.530,23.643 11.471,24.312 13.557,24.312 C20.350,24.312 24.065,18.157 24.065,12.818 C24.065,12.643 24.061,12.469 24.054,12.296 C24.776,11.727 25.402,11.015 25.897,10.205 C25.234,10.526 24.523,10.743 23.776,10.841 C24.538,10.341 25.124,9.549 25.399,8.606 Z"/>
+		   </g>
+		   </svg></a></li>
+	</ul>
+</div>
+<!-- /.ba-container -->
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BvGQbN1ahxfHjgxzrwMh6zzJs_NQzHU&callback=initMap">
+	</script>
+</body>
+
+</html>
